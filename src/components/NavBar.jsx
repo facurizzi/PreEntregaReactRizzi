@@ -1,20 +1,41 @@
+import React from 'react';
+import CartWidget from './cardwidget';
+
 const NavBar = () => {
   return (
-    <nav>
-      <ul className="nav-list">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Sobre Nosotros</a></li>
-        <li><a href="#">Certificaciones</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-      <div className="cart">
-        <img
-          src="ruta/a/la/imagen/carrito.png"
-          alt="Carrito de Compras"
-          title="Comprar"
-        />
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <a className="navbar-brand" href="#">Mi Tienda</a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item">
+            <a className="nav-link" href="#">Inicio</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Productos</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Sobre Nosotros</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Certificaciones</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
       </div>
+      <CartWidget />
     </nav>
   );
 };
