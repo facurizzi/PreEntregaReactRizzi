@@ -1,12 +1,10 @@
 import React from 'react';
+import {AiOutlineShoppingCart} from "react-icons/ai"
 
 const CartWidget = () => {
   return (
-    <div className="cart-widget">
-      <img
-        src={'https://e7.pngegg.com/pngimages/833/426/png-clipart-shopping-cart-shopping-cart.png'}
-        alt="Carrito de Compras"
-      />
+    <div>
+      <AiOutlineShoppingCart /> <span>0</span>
     </div>
   );
 };
