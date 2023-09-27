@@ -2,6 +2,7 @@ import React from "react";
 import Col from "react-bootstrap/esm/Col";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Counter from "../Counter/Counter";
 
 const ItemList = ({items}) => {
     return (
@@ -29,6 +30,7 @@ const CardList = ({item}) => {
             </Card.Text>
             <Button variant="primary">Ver detalles</Button>
           </Card.Body>
+          <Counter />
         </Card>
       );
 }
