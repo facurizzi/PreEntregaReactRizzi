@@ -21,6 +21,6 @@ const Counter = () => {
             <button onClick={decrement}>Restar</button>
         </div>
     )
-}
+}  
 
 export default Counter
